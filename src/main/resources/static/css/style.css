@@ -1,0 +1,51 @@
+body{
+    display: block;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    top: 100;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    color: black;
+    text-align: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+head{
+    position:fixed;
+    top:0;
+    width: 100%;
+}
+
+button{
+    display:flex;
+    justify-content: center;
+}
+
+#approveButton{
+    background-color: #3aca3a;
+
+}
+
+#denyButton{
+    background-color: #dd3737;
+
+}

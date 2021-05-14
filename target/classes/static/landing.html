@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="css/style.css">
+<head>
+    <title> </title>
+    <h1 id="head" >Foo Home Page </h1>
+</head>
+    <script>
+        if (sessionStorage.getItem("userRole")==1){
+            document.getElementById("head").innerHTML = "Manager Home Page";
+            document.title = "Manager Home Page";
+        } else {
+            document.getElementById("head").innerHTML = "User Home Page";
+            document.title = "User Home Page";
+        }
+    </script>
+
+
+<body>
+<br>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Amount</th>
+            <th>Submission Timestamp</th>
+            <th>Resolution Timestamp</th>
+            <th>Description</th>
+            <th>Author ID</th>
+            <th>Resolver ID</th>
+            <th>Status</th>
+            <th>Type</th>
+            <th>Reciept</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+</body>
+
+<script src = "functions.js"></script>
+
+<script>
+"use strict";
+checkUser();
+
+if (sessionStorage.getItem("userRole")==1){
+    createManagerTable();
+} else {
+    createEmployeeReimbTable();
+}
+</script>
+
+
+
+</html>
